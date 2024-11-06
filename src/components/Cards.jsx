@@ -9,13 +9,16 @@ function Cards() {
       <p className="text-xs mt-2">
         Lorem ipsum dolor sit amet consectetur adipisicing elit.
       </p>
-      <div className="footer absolute bottom-0 w-full h-10 left-0  p-2 ">
-        <div className="flex items-center justify-between">
+      <div className="footer absolute bottom-8 w-full h-10 left-0    ">
+        <div className="flex items-center justify-between px-5 py-2 ">
           <h5>0.5mB</h5>
           <span className="">
             {" "}
             <MdDownloadForOffline className=" mr-2 " size={18} />
           </span>
+        </div>
+        <div className=" tag w-full bottom-10 h-10 bg-green-600 flex items-center justify-center">
+          <h3 className="font-semibold">Download Now</h3>
         </div>
       </div>
     </div>
