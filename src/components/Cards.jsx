@@ -1,11 +1,17 @@
 import React from "react";
 import { FaFileDownload } from "react-icons/fa";
-import { MdDownloadForOffline } from "react-icons/md";
+import { MdDownloadForOffline, MdSlowMotionVideo } from "react-icons/md";
 import { IoCloseCircleOutline } from "react-icons/io5";
+import { motion } from "framer-motion";
 
-function Cards({ data }) {
+function Cards({ data, reference }) {
   return (
-    <div className="relative h-48 w-40 bg-indigo-300   p-3 rounded-[30px] overflow-hidden">
+    <motion.div
+      drag
+      dragConstraints={reference}
+      whileHover={{ scale: 1.2 }}
+      className="relative h-48 w-40 bg-indigo-300   p-3 rounded-[30px] overflow-hidden"
+    >
       <FaFileDownload />
       <p className="text-xs mt-2">{data.description}</p>
       <div className="footer absolute bottom-8 w-full h-10 left-0    ">
@@ -30,7 +36,7 @@ function Cards({ data }) {
           </div>
         )}
       </div>
-    </div>
+    </motion.div>
   );
 }
 
