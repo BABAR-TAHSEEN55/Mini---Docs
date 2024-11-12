@@ -1,0 +1,8 @@
+- Background 
+- Foreground 
+    Icon
+    Content
+    Footer
+        Size Content
+        Download button 
+        Tag
